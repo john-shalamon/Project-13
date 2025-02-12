@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    background-color: #0d0d16;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container - Centered Content */
+.container {
+    display: flex;
+    background-color: #1b1b2f;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 90%;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Left Content - Centered Text */
+.content {
+    width: 100%;
+    text-align: center; /* Center align text */
+}
+
+/* Heading */
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.highlight {
+    color: #a855f7;
+}
+
+/* Description */
+.description {
+    margin-top: 15px;
+    color: #cbd5e0;
+    font-size: 18px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right:30px;
+    text-align: left;
+}
+
+/* Stats - Centered */
+.stats {
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+    text-align: center; /* Align numbers in center */
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(138, 43, 226, 0.5); /* Violet color with 50% opacity */
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+}
+
+/* Numbers */
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Labels */
+.label {
+    font-size: 14px;
+    color: #9ca3af;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stats */
+        gap: 20px;
+    }
+}
